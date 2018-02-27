@@ -20,7 +20,7 @@ bool verify_symbols(const char*);
 void parse_input(const char*, token_queue&);
 
 int main() {
-	char* input = "3 + 4";
+	char* input = "7 * (3 + 4)   ";
 	char* input_no_white_space = remove_white_space(input);
 	token_queue tq;
 
