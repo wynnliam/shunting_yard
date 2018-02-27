@@ -15,9 +15,8 @@ token_queue::~token_queue() {
 }
 
 void token_queue::insert(const char* token) {
-	if(!token) {
+	if(!token)
 		return;
-	}
 
 	token_node* temp = new token_node;
 	temp->token = new char[strlen(token) + 1];
