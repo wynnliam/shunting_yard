@@ -33,3 +33,20 @@ void token_queue::insert(const char* token) {
 		rear = temp;
 	}
 }
+
+void token_queue::display() const {
+	if(!rear)
+		return;
+
+	token_node* temp = rear->next;
+	token_node* curr = temp;
+
+	rear->next = NULL;
+
+	while(curr) {
+		cout << curr->token << endl;
+		curr = curr->next;
+	}
+
+	rear->next = temp;
+}

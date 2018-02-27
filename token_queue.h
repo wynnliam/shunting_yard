@@ -11,6 +11,7 @@ class token_queue {
 		~token_queue();
 
 		void insert(const char* token);
+		void display() const;
 
 	private:
 		token_node* rear;
